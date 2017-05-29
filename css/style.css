@@ -1,0 +1,211 @@
+@font-face {
+    font-family: 'montserrat';
+    src: url('../fonts/montserratRegular.woff2') format('woff2'),
+         url('../fonts/montserratRegular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+  font-family: 'montserrat';
+  color: #ffffff;
+  background-color: #ebebeb;
+}
+
+h1 {
+  font-size: 2em;
+}
+
+h2 {
+  font-size: 1.5em;
+}
+
+h3 {
+  font-size: 1.17em;
+}
+
+a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  background-color: #373c3f;
+  text-transform: capitalize;
+}
+
+.headerTitle, .header a i {
+  padding: 20px;
+  align-self: flex-start;
+}
+
+.header a {
+  background-color: #202529;
+}
+
+.hide {
+  height: 0;
+  visibility: hidden;
+}
+
+nav ul {
+  background-color: #202529;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  text-align: left;
+}
+
+nav ul li {
+  padding: 20px;
+  text-transform: uppercase;
+}
+
+nav ul a:hover {
+  color: #bc3183;
+}
+
+.banner {
+  background-color: #0ca3b9;
+  padding: 80px 40px;
+}
+
+.banner a {
+  margin-top: 30px;
+  display: flex;
+  align-items: center;
+}
+
+.banner a span {
+  margin-right: 27%;
+}
+
+.textBox {
+  display: flex;
+  width: 100%;
+}
+
+.textBox p, .textBox a i {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.textBox p {
+  color: #9282a0;
+  background-color: #27212c;
+  width: 100%;
+  padding: 20px;
+}
+
+.textBox a i {
+  background-color: #bc3183;
+  padding: 30px;
+}
+
+.imgLinks {
+  display: flex;
+  flex-direction: column;
+}
+
+.img {
+  width: 100%;
+  margin-bottom: -4px;
+}
+
+article {
+  color: #515151;
+  padding: 30px;
+}
+
+article a {
+  color: #088ca5;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+.container p {
+  margin: 30px 30px 30px 0;
+}
+
+@media only screen and (max-width: 639px) {
+  .banner {
+    padding: 50px;
+  }
+}
+
+@media only screen and (min-width: 640px) and (max-width: 980px) {
+  body {
+    font-size: 120%;
+  }
+
+  .banner {
+    padding: 80px;
+  }
+}
+
+@media only screen and (min-width: 981px) {
+
+  body {
+    font-size: 150%;
+  }
+
+  .header {
+    display: none;
+  }
+
+  .hide {
+    height: 100%;
+    visibility: visible;
+  }
+
+  nav ul {
+    flex-direction: row;
+  }
+
+  .banner {
+    padding: 200px;
+  }
+
+  .textBox p, .textBox a i {
+    padding: 50px;
+  }
+
+  .imgLinks {
+    flex-direction: row;
+  }
+
+  .img {
+    margin: 0;
+  }
+
+  article {
+    padding: 80px;
+  }
+
+  .container {
+    flex-direction: row;
+  }
+
+  .container p {
+    margin: 50px 50px 50px 0;
+  }
+}
+
+@media only screen and (min-width: 1360px) and (max-width: 1919px) {
+  .banner a span {
+    margin-right: 22%;
+  }
+}
+
+@media only screen and (min-width: 1920px) {
+  .banner a span {
+    margin-right: 18%;
+  }
+}
